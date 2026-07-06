@@ -1052,17 +1052,6 @@ customLabel.innerHTML =
     return wrap;
   }
 
-   function ipopClose(){
-    var p = document.getElementById('imgPopup');
-    if (p) p.classList.remove('show');
-  }
-  (function(){
-    var p = document.getElementById('imgPopup');
-    if (!p) return;
-    document.body.appendChild(p); 
-    requestAnimationFrame(function(){ p.classList.add('show'); });
-  })();
-
   function init() {
     if (window.innerWidth > MOBILE_BREAKPOINT) return;
     if (!document.querySelector(".jackpot")) return;
